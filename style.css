@@ -1,0 +1,789 @@
+/*DRINKS MANIA - MAIN CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffaf0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123f3b;
+}
+
+/*MAIN HEADER*/
+.address{
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background: linear-gradient(90deg,#1d5653,#12605a);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+}
+
+/*LOGO*/
+.logo1{
+    border: 5px solid antiquewhite;
+    border-radius: 120%;
+}
+.logo{
+
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    /*border: 5px solid antiquewhite;*/
+    border-radius: 90%;
+    border: 6px solid #e9c674;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    font-family: serif;
+    font-size: xx-large;
+}
+
+/* Cafe name */
+
+.cafe-name {
+    color: #ffffff;
+    font-size: 32px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ================================
+NAVIGATION
+   ================================ */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 10px 25px;
+    margin: 5px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #f6c453;
+    color: #063f3b;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+
+/* ================================
+MARQUEE / DRINK IMAGES
+   ================================ */
+
+.drink-slider {
+    background-color: #f4ead5;
+    padding: 20px 0;
+}
+
+.drink-slider img {
+    width: 250px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 4px solid white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+
+    transition: 0.3s;
+}
+
+.drink-slider img:hover {
+    transform: scale(1.08);
+}
+
+/* ================================
+WELCOME SECTION
+   ================================ */
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Welcome heading */
+
+.welcome h2 {
+    color: #111212;
+    font-size: 36px;
+
+    margin-bottom: 25px;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Paragraph */
+
+.welcome p {
+    max-width: 900px;
+    margin: 15px auto;
+
+    font-size: 18px;
+    line-height: 1.8;
+    font-size: xx-large;
+    color: #0f1111;
+}
+
+/* Drinks Mania bold text */
+
+.welcome b {
+    color: #221821;
+}
+
+/* ================================
+SPECIAL MESSAGE
+   ================================ */
+
+.special {
+    display: inline-block;
+
+    background-color: #ec37f9;
+
+    color: #0c6660;
+
+    padding: 12px 30px;
+
+    margin-top: 15px;
+
+    border-radius: 30px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* ================================
+    DESIGN
+   ================================ */
+
+@media screen and (max-width: 768px) {
+
+    .cafe-name {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .drink-slider img {
+        width: 180px;
+        height: 120px;
+    }
+
+    .welcome h2 {
+        font-size: 28px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+}
+
+
+/*ABOUT PAGE CSS*/
+/* =================================
+ABOUT PAGE
+   ================================= */
+
+.about-section {
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+}
+
+
+/* ABOUT HEADING */
+
+.about-section h2 {
+
+    font-size: 60px;
+
+    color: #06443f;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* INTRODUCTION */
+
+.intro {
+
+    max-width: 750px;
+
+    margin: 0 auto 40px;
+
+    font-size: 30px;
+
+    line-height: 1.8;
+
+    color: #0b0c0c;
+
+}
+
+
+/* DRINK CARDS CONTAINER */
+
+.drink-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* EACH CARD */
+
+.drink-card {
+
+    width: 280px;
+
+    min-height: 350px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    border-top: 6px solid #f6c453;
+
+    transition: 0.3s;
+
+    text-align: left;
+
+}
+
+
+/* CARD HOVER */
+
+.drink-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+
+}
+
+
+/* CARD HEADING */
+
+.drink-card h3 {
+
+    text-align: center;
+
+    color: #06443f;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* LIST */
+
+.drink-card ul {
+
+    list-style-type: none;
+
+    padding: 0;
+
+}
+
+
+/* LIST ITEMS */
+
+.drink-card li {
+
+    background-color: #fff7dc;
+
+    margin: 10px 0;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    color: #315b57;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+
+}
+
+
+/* LIST ITEM HOVER */
+
+.drink-card li:hover {
+
+    background-color: #f6c453;
+
+    color: #063f3b;
+
+    padding-left: 22px;
+
+}
+
+
+/* =================================
+MOBILE
+   ================================= */
+
+@media screen and (max-width: 768px) {
+
+    .about-section {
+
+        padding: 35px 15px;
+
+    }
+
+    .about-section h2 {
+
+        font-size: 28px;
+
+    }
+
+    .drink-card {
+
+        width: 90%;
+
+        max-width: 350px;
+
+    }
+
+}
+
+/*GALLERY PAGE CSS*/
+
+/* =================================
+GALLERY PAGE
+   ================================= */
+
+.gallery-section {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
+
+
+/* GALLERY HEADING */
+
+.gallery-section h2 {
+
+    font-size: 36px;
+
+    color: #06443f;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* GALLERY INTRO */
+
+.gallery-intro {
+
+    font-size: 30px;
+
+    color: #315b57;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =================================
+GALLERY TABLE
+   ================================= */
+
+.gallery-table {
+
+    margin: auto;
+
+    border-collapse:separate;
+
+    border-spacing: 20px;
+
+}
+
+
+/* TABLE CELLS */
+
+.gallery-table td {
+
+    padding: 0;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background-color: rgb(246, 242, 242);
+
+    box-shadow: 0 8px 20px rgba(177, 60, 219, 0.2);
+
+}
+
+
+/* GALLERY IMAGES */
+
+.gallery-table img {
+
+    display: block;
+
+    width: 400px;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+
+}
+
+
+/* IMAGE HOVER */
+
+.gallery-table td:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+/* CARD HOVER */
+
+.gallery-table td:hover {
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30);
+
+}
+
+
+/* =================================
+MOBILE VIEW
+   ================================= */
+
+@media screen and (max-width: 900px) {
+
+    .gallery-table {
+
+        display: block;
+
+    }
+
+    .gallery-table tr {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .gallery-table td {
+
+        margin: 8px;
+
+    }
+
+    .gallery-table img {
+
+        width: 250px;
+
+        height: 250px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .gallery-section h2 {
+
+        font-size: 28px;
+
+    }
+
+    .gallery-table tr {
+
+        display: block;
+
+    }
+
+    .gallery-table td {
+
+        display: block;
+
+        width: fit-content;
+
+        margin: 15px auto;
+
+    }
+
+}
+
+
+/*CONTACT US CSS*/
+
+/* =================================
+CONTACT PAGE
+   ================================= */
+
+.contact-section {
+
+    text-align: center;
+
+    padding: 50px 25px;
+
+}
+
+
+/* MAIN HEADING */
+
+.contact-section h2 {
+
+    font-size: 30px;
+
+    color: #06443f;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* CONTACT CARDS */
+
+.contact-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    font-size: x-large;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/* EACH CONTACT CARD */
+
+.contact-card {
+
+    width: 300px;
+
+    min-height: 300px;
+
+    background-color: white;
+
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    border-top: 6px solid #f6c453;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+
+}
+
+
+/* CARD HOVER */
+
+.contact-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+
+}
+
+
+/* ICON */
+
+.contact-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* CARD HEADING */
+
+.contact-card h3 {
+
+    color: #06443f;
+
+    font-size: 23px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* CARD TEXT */
+
+.contact-card p {
+
+    color: #315b57;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* INSTAGRAM LINK */
+
+.contact-card a {
+
+    display: inline-block;
+
+    background-color: #f6c453;
+
+    color: #063f3b;
+
+    text-decoration: none;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-card a:hover {
+
+    background-color: #063f3b;
+
+    color: white;
+
+    transform: scale(1.05);
+
+}
+
+
+/* THANK YOU */
+
+.thank-you {
+
+    margin-top: 50px;
+
+    font-size: 50px;
+
+    color: #e59b18;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =================================
+MOBILE VIEW
+   ================================= */
+
+@media screen and (max-width: 768px) {
+
+    .contact-section {
+
+        padding: 35px 15px;
+
+    }
+
+    .contact-section h2 {
+
+        font-size: 28px;
+
+    }
+
+    .contact-card {
+
+        width: 90%;
+
+        max-width: 350px;
+
+    }
+
+}
+
