@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
@@ -25,7 +26,10 @@ header{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
 }
+
 
 .menu{
     justify-content: center;
@@ -38,13 +42,14 @@ header{
 .logo1{
     border: 5px solid antiquewhite;
     border-radius: 120%;
+    margin-bottom: 0;
 }
 .logo{
 
     width: 180px;
     height: 180px;
     object-fit: cover;
-    /* border: 5px solid antiquewhite; */
+    border: 5px solid antiquewhite;
     border-radius: 90%;
     border: 6px solid #e9c674;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -52,16 +57,87 @@ header{
     font-size: xx-large;
 }
 
-/* Cafe name */
+/*Cafe name */
 
 .cafe-name {
     color: #ffffff;
     font-family:'Monotype Corsiva',cursive,fantasy;
     font-size: 32px;
-    margin: 15px 0;
+    margin: 30px 15px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-bottom: 0;
 }
+.my-para{
+    color: whitesmoke;
+    font-family: Georgia,serif,cursive,serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin: 0px 20px;
+    padding: 10px;
+
+}
+
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    margin-top: 10;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    background: linear-gradient(to right, #063f3b, #12605a);
+}
+
+/* NAVIGATION BUTTONS */
+.navbar a {
+    text-decoration: none;
+    color: #fffaf0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    padding: 12px 26px;
+    border: 2px solid #f6c453;
+    border-radius: 30px;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.navbar a:hover {
+    background-color: #f6c453;
+    color: #063f3b;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+/* ACTIVE PAGE BUTTON */
+.navbar a.active {
+    background-color: #f6c453;
+    color: #063f3b;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+    .navbar {
+        gap: 10px;
+        padding: 15px 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
 
 /* ================================
 NAVIGATION
@@ -94,6 +170,8 @@ nav a:hover {
 
     box-shadow: 0 5px 12px rgba(0,0,0,0.25);
 }
+
+
 
 
 /* ================================
