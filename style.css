@@ -44,7 +44,7 @@ header{
     width: 180px;
     height: 180px;
     object-fit: cover;
-    /*border: 5px solid antiquewhite;*/
+    /* border: 5px solid antiquewhite; */
     border-radius: 90%;
     border: 6px solid #e9c674;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -56,10 +56,11 @@ header{
 
 .cafe-name {
     color: #ffffff;
+    font-family:'Monotype Corsiva',cursive,fantasy;
     font-size: 32px;
     margin: 15px 0;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 /* ================================
@@ -783,6 +784,52 @@ MOBILE VIEW
 
         max-width: 350px;
 
+    }
+
+}
+
+/* Mobile responsive fix */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cafe-name {
+        font-size: 20px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
 }
